@@ -9,14 +9,17 @@ SYNOPSIS
 ========
 
 ```raku
-use roundrobin::slip;
+use roundrobin-slip;
+
+.say for roundrobin((1,2), (3,4));        # (1 3)␤(2 4)␤
+
 .say for roundrobin((1,2), (3,4), :slip); # 1␤3␤2␤4␤
 ```
 
 DESCRIPTION
 ===========
 
-roundrobin-slip is a distribution that provides an extra candidate for the `roundrobin` function that will automatically `slip` all values that are produced.
+roundrobin-slip is a distribution that provides an extra candidate for the [roundrobin](https://docs.raku.org/routine/roundrobin) function that will automatically [slip](https://docs.raku.org/routine/slip) all values that are produced.
 
 AUTHOR
 ======
