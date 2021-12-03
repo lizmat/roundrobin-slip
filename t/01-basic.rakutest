@@ -1,0 +1,18 @@
+use Test;
+use roundrobin-slip;
+
+my @tests = (
+  \(              ), (           ), (       ), 'empty roundrobin',
+  \( (1,2), (3,4) ), ((1,3),(2,4)), (1,3,2,4), 'two equally sized lists',
+  \( (1,2), (3,)  ), ((1,3),(2,) ), (1,3,2),   'two unequally sized lists',
+  \( (1,2), ()    ), ((1,), (2,) ), (1,2),     'one empty list',
+);
+
+plan @tests / 2;
+
+for @tests -> \signature, \normal, \slipped, $message {
+    is-deeply roundrobin(|signature),        normal,   $message;
+    is-deeply roundrobin(|signature, :slip), slipped, "$message with :slip";
+}
+
+# vim: expandtab shiftwidth=4

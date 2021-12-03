@@ -1,0 +1,25 @@
+{
+  "auth": "zef:lizmat",
+  "authors": [
+    "Elizabeth Mattijsen"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Provide roundrobin(:slip) for older Rakus",
+  "license": "Artistic-2.0",
+  "name": "roundrobin-slip",
+  "perl": "6.d",
+  "provides": {
+    "roundrobin-slip": "lib/roundrobin-slip.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/lizmat/roundrobin-slip.git",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
+}
