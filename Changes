@@ -1,6 +1,8 @@
 Revision history for roundrobin-slip
 
 {{$NEXT}}
+    - Add CI badge for each OS
+    - Update copyright year
 
 0.0.2  2024-06-25T13:29:30+02:00
     - Add sponsor link and button
