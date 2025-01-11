@@ -18,7 +18,7 @@ use roundrobin-slip;
 
 =head1 DESCRIPTION
 
-roundrobin-slip is a distribution that provides an extra candidate for
+C<roundrobin-slip> is a distribution that provides an extra candidate for
 the L<roundrobin|https://docs.raku.org/routine/roundrobin> function that
 will automatically L<slip|https://docs.raku.org/routine/slip> all values
 that are produced.

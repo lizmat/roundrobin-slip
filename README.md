@@ -19,7 +19,7 @@ use roundrobin-slip;
 DESCRIPTION
 ===========
 
-roundrobin-slip is a distribution that provides an extra candidate for the [roundrobin](https://docs.raku.org/routine/roundrobin) function that will automatically [slip](https://docs.raku.org/routine/slip) all values that are produced.
+`roundrobin-slip` is a distribution that provides an extra candidate for the [roundrobin](https://docs.raku.org/routine/roundrobin) function that will automatically [slip](https://docs.raku.org/routine/slip) all values that are produced.
 
 AUTHOR
 ======
